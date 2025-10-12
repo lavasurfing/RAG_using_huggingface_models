@@ -1,0 +1,21 @@
+transformers>=4.30.0
+langchain>=0.1.0
+langchain-huggingface>=0.0.1
+langchain-community>=0.0.10
+streamlit>=1.28.0
+torch>=2.0.0
+faiss-cpu>=1.7.4
+sentence-transformers>=2.2.0
+PyPDF2>=3.0.0
+python-dotenv>=1.0.0
+# Installed dependencies from venv/Lib (without version numbers)
+transformers
+langchain
+langchain_huggingface
+langchain_community
+streamlit
+torch
+faiss_cpu
+sentence_transformers
+PyPDF2
+python_dotenv
