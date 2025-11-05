@@ -200,3 +200,12 @@ This project is open source and available under the MIT License.
 ### splitChunkVec.py : splitting chunking and setting up vector store
 ### llm_prompts.py
 ### prompts.py
+
+## Progress Tracking
+- ragbuilt0 - embedding creator
+- ragbulit1 - LLM initalizer , using hugging face models
+- ragbulit2 - Loading pdf document 
+- ragbulit3 - 
+
+
+

@@ -77,6 +77,19 @@ def read_from_vector_store():
     retrieval_vector_store = vector_store.as_retriever(search_type="similarity", search_kwargs={"k": 3})
 
     print(retrieval_vector_store.invoke('What is Machine Learning?'))
+
+
+def sample_ReadFromPersistedDb():
+    embedding_model = get_embedding_model()
+    db = Chroma(
+        collection_name="thebook",
+        embedding_function=embedding_model,
+        persist_directory="./chroma_db"
+    )
+    results = db.similarity_search("What is Machine Learning?", k=3)
+    for i, doc in enumerate(results):
+        print(f"\nResult {i+1}:\n")
+        print(doc.page_content)
     
 
 
@@ -100,5 +113,7 @@ def run():
 # run_uuid()
 
 # run()
+
+# sample_ReadFromPersistedDb()
 
 read_from_vector_store()

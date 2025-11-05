@@ -1,4 +1,3 @@
-from embedding import get_embedding_model
 from splitChunk import get_retrieval_vector_store
 from transformers import pipeline   
 
@@ -41,6 +40,8 @@ def rag_answer_prompt(question: str):
     })
 
     return response
+
+
 
 res = rag_answer_prompt("What the easiest way to learn Machine Learning?")
 

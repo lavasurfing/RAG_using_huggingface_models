@@ -14,3 +14,8 @@ def load_pdf():
     #     print(f"\nDocument {i+1}:\n")
     #     print(doc.page_content[:500])  # Print first 500 characters of each document
     return docs
+
+
+pdf = load_pdf()
+
+print(pdf)
